@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/background1</item>
+        <item name="colorPrimaryDark">@color/background2</item>
+        <item name="colorAccent">@color/bodily</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="TextView"> <!--parent="" -->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAppearance">@style/Text</item>
+    </style>
+
+
+    <style name="TextView.Secondary">
+        <item name="android:textAppearance">@style/Text.Primary</item>
+    </style>
+
+
+    <style name="TextView.Primary">
+        <item name="android:textAppearance">@style/Text.Primary</item>
+    </style>
+    <style name="TextView.Primary.Header">
+        <item name="android:textAppearance">@style/Text.Primary.Header</item>
+    </style>
+    <style name="TextView.Primary.Bold">
+        <item name="android:textAppearance">@style/Text.Primary.Bold</item>
+    </style>
+
+
+    <style name="Text" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">22dp</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+
+    <style name="Text.Primary">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Text.Primary.Header">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Text.Primary.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="Text.Secondary">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+</resources>
