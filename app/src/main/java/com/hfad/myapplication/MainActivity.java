@@ -26,16 +26,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         List<Category> categoryList = new ArrayList<>();
-        categoryList.add(new Category(1,"Text"));
-        categoryList.add(new Category(2,"Text"));
-        categoryList.add(new Category(3,"Text"));
-        categoryList.add(new Category(4,"Text"));
-        categoryList.add(new Category(5,"Text"));
-        categoryList.add(new Category(6,"Text"));
+        categoryList.add(new Category(1,"Pizza"));
+        categoryList.add(new Category(2,"Potato"));
+        categoryList.add(new Category(3,"Drinks"));
+        categoryList.add(new Category(4,"Desserts"));
+        categoryList.add(new Category(5,"Burgers"));
         setCategoryRecycler(categoryList);
 
         List<MenuDishes> dishList = new ArrayList<>();
-        dishList.add(new MenuDishes(1, "salad1", "Light salad","A salad that contains red onions,\ntomatoes, cabbage, a boiled egg.\nSuitable for a light snack.", "150 gram", "27 645 UZS","#F58F56"));
+        dishList.add(new MenuDishes(1, "potatofree", "French fries","Potato sticks, 1 cm sections, fried in hot oil.", "180 gram", "1.2$","#F58F56"));
+        dishList.add(new MenuDishes(2, "pizza", "Pizza","A dish in the form of a thin round flatbread baked with tomato sauce filling, slices of cheese and sausage.", "250 gram", "1$","#F58F56"));
+        dishList.add(new MenuDishes(3, "sandwich", "Sandwich","A sandwich consisting of two slices of bread with a filling in between.", "150 gram", "0.8$","#F58F56"));
+        dishList.add(new MenuDishes(4, "coffe", "Coffe","A tonic non-alcoholic drink prepared on the basis of roasted coffee beans", "200 gram", "1.2$","#F58F56"));
         setDishRecycler(dishList);
     }
 
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         menuAdapter=new MenuAdapter(this,dishList);
         menuRecycler.setAdapter(menuAdapter);
     }
+
 
     private void setCategoryRecycler(List<Category> categoryList) {
 

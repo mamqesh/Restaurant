@@ -12,19 +12,18 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
-import com.hfad.myapplication.R;
 import java.util.List;
+import com.hfad.myapplication.R;
 import com.hfad.myapplication.model.MenuDishes;
 
 public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder> {
 
     Context context;
-    List<Menu> dishes;
+    List<MenuDishes> menuDishes;
 
-    public MenuAdapter(Context context, List<Menu> dishes) {
+    public MenuAdapter(Context context, List<MenuDishes> menuDishes) {
         this.context = context;
-        this.dishes = dishes;
+        this.menuDishes = menuDishes;
     }
 
     @NonNull
@@ -37,18 +36,18 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
     @Override
     public void onBindViewHolder(@NonNull MenuAdapter.MenuViewHolder menuViewHolder, int i) {
 
-        menuViewHolder.dishBackground.setCardBackgroundColor(Color.parseColor(dishes.get(i).getColor()));
-        int imageId=context.getResources().getIdentifier("ic_"+dishes.get(i).getImg(),"drawable", context.getPackageName());
+        menuViewHolder.dishBackground.setCardBackgroundColor(Color.parseColor(menuDishes.get(i).getColor()));
+        int imageId=context.getResources().getIdentifier("ic_"+ menuDishes.get(i).getImg(),"drawable", context.getPackageName());
         menuViewHolder.dishImage.setImageResource(imageId);
-        menuViewHolder.dishTitle.setText(dishes.get(i).getTitile());
-        menuViewHolder.descriptionDish.setText(dishes.get(i).getDescription());
-        menuViewHolder.weightDish.setText(dishes.get(i).getDish());
-        menuViewHolder.priceDish.setText(dishes.get(i).getPrice());
+        menuViewHolder.dishTitle.setText(menuDishes.get(i).getTitle());
+        menuViewHolder.descriptionDish.setText(menuDishes.get(i).getDescription());
+        menuViewHolder.weightDish.setText(menuDishes.get(i).getWeight());
+        menuViewHolder.priceDish.setText(menuDishes.get(i).getPrice());
     }
 
     @Override
     public int getItemCount() {
-        return dishes.size();
+        return menuDishes.size();
     }
 
     public static final class MenuViewHolder extends RecyclerView.ViewHolder{

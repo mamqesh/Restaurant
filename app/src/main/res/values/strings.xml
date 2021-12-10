@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">Restaurant</string>
-    <string name="home">Домой</string>
-    <string name="settings">Настройки</string>
-    <string name="history">История</string>
-    <string name="order">Заказать</string>
-    <string name="account">Аккаунт</string>
-    <string name="map">Карта</string>
-    <string name="heading1">Uzbek</string>
-    <string name="heading2">cuisine restaurant</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="history">History</string>
+    <string name="order">To order</string>
+    <string name="account">Account</string>
+    <string name="map">Map</string>
+    <string name="heading1">Fast food</string>
+    <string name="heading2">restaurant</string>
     <string name="description_dish">Description:</string>
-    <string name="the_weight_dish">The weight:</string>
+    <string name="the_weight_dish">Weight:</string>
     <string name="price_dish">Price:</string>
 </resources>
