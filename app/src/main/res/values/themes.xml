@@ -10,6 +10,12 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">
+            @drawable/splashscreen
+        </item>
+    </style>
+
     <style name="TextView"> <!--parent="" -->
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
