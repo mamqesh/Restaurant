@@ -2,9 +2,9 @@ package com.hfad.myapplication.model;
 
 public class MenuDishes {
     int id;
-    String img, title, description, weight, price, color;
+    String img, title, description, weight, price, color, text;
 
-    public MenuDishes(int id, String img, String title, String description, String weight, String price, String color) {
+    public MenuDishes(int id, String img, String title, String description, String weight, String price, String color, String text) {
         this.id = id;
         this.img = img;
         this.title = title;
@@ -12,6 +12,7 @@ public class MenuDishes {
         this.weight = weight;
         this.price = price;
         this.color = color;
+        this.text = text;
     }
 
     public int getId() {
@@ -68,5 +69,13 @@ public class MenuDishes {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 }

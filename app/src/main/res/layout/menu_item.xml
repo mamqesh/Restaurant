@@ -29,6 +29,7 @@
                 android:layout_width="305dp"
                 android:layout_height="256dp"
                 android:contentDescription="@string/app_name"
+                android:transitionName="dishImage"
                 tools:srcCompat="@drawable/ic_potatofree" />
 
             <TextView

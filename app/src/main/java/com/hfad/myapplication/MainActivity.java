@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
         setCategoryRecycler(categoryList);
 
         List<MenuDishes> dishList = new ArrayList<>();
-        dishList.add(new MenuDishes(1, "potatofree", "French fries","Potato sticks, 1 cm sections, fried in hot oil.", "180 gram", "1.2$","#F58F56"));
-        dishList.add(new MenuDishes(2, "pizza", "Pizza","A dish in the form of a thin round flatbread baked with tomato sauce filling, slices of cheese and sausage.", "250 gram", "1$","#F58F56"));
-        dishList.add(new MenuDishes(3, "sandwich", "Sandwich","A sandwich consisting of two slices of bread with a filling in between.", "150 gram", "0.8$","#F58F56"));
-        dishList.add(new MenuDishes(4, "coffe", "Coffe","A tonic non-alcoholic drink prepared on the basis of roasted coffee beans", "200 gram", "1.2$","#F58F56"));
+        dishList.add(new MenuDishes(1, "potatofree", "French fries","Potato sticks, 1 cm sections, fried in hot oil.", "180 gram", "1.2$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(2, "pizza", "Pizza","A dish in the form of a thin round flatbread baked with tomato sauce filling, slices of cheese and sausage.", "250 gram", "1$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(3, "sandwich", "Sandwich","A sandwich consisting of two slices of bread with a filling in between.", "150 gram", "0.8$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(4, "coffe", "Coffe","A tonic non-alcoholic drink prepared on the basis of roasted coffee beans", "200 gram", "1.2$","#F58F56", "Text"));
         setDishRecycler(dishList);
     }
 
