@@ -26,18 +26,30 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         List<Category> categoryList = new ArrayList<>();
-        categoryList.add(new Category(1,"Pizza"));
-        categoryList.add(new Category(2,"Potato"));
-        categoryList.add(new Category(3,"Drinks"));
+        categoryList.add(new Category(1,"Potato"));
+        categoryList.add(new Category(2,"Pizza"));
+        categoryList.add(new Category(3,"Burgers"));
         categoryList.add(new Category(4,"Desserts"));
-        categoryList.add(new Category(5,"Burgers"));
+        categoryList.add(new Category(5,"Drinks"));
         setCategoryRecycler(categoryList);
 
         List<MenuDishes> dishList = new ArrayList<>();
         dishList.add(new MenuDishes(1, "potatofree", "French fries","Potato sticks, 1 cm sections, fried in hot oil.", "180 gram", "1.2$","#F58F56", "Text"));
-        dishList.add(new MenuDishes(2, "pizza", "Pizza","A dish in the form of a thin round flatbread baked with tomato sauce filling, slices of cheese and sausage.", "250 gram", "1$","#F58F56", "Text"));
-        dishList.add(new MenuDishes(3, "sandwich", "Sandwich","A sandwich consisting of two slices of bread with a filling in between.", "150 gram", "0.8$","#F58F56", "Text"));
-        dishList.add(new MenuDishes(4, "coffe", "Coffe","A tonic non-alcoholic drink prepared on the basis of roasted coffee beans", "200 gram", "1.2$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(2, "pizza", "Pizza","Pizza with pieces of sausage, mushrooms, lettuce and olives.", "250 gram", "1$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(3, "pizza1", "Pizza","Pizza with pieces of sausage, tomatoes and herbs.", "220 gram", "0.8$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(4, "pizza2", "Pizza","Pizza with cheese, pieces of sausage and olives.", "260 gram", "1.4$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(5, "burger1", "Litle burger","A light burger for a quick bite.", "120 gram", "0.9$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(6, "burger2", "Big burger","Great burger for a hearty snack.", "250 gram", "1.8$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(7, "sandwich", "Sandwich","A sandwich consisting of two slices of bread with a filling in between.", "150 gram", "0.8$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(7, "taco", "Taco","Tortilla with meat and vegetables, seasoned with aromatic spices.", "160 gram", "0.9$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(7, "cake", "Strawberry cake","Piece of fresh strawberry cake.", "150 gram", "1.2$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(7, "cake1", "Cherry cake","Piece of fresh cake with cherries.", "150 gram", "1.2$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(7, "cake2", "Chocolate muffin","Fresh, hot chocolate muffin.", "90 gram", "0.6$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(8, "coffe", "Coffe","A tonic non-alcoholic drink prepared on the basis of roasted coffee beans.", "150 gram", "1.2$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(9, "cherrydrink", "Cherry carbonated drink","Cherry-flavored carbonated drink.", "400 gram", "1$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(10, "lemondrink", "Lemon carbonated drink","Lemon flavored carbonated drink.", "400 gram", "1$","#F58F56", "Text"));
+        dishList.add(new MenuDishes(11, "pineappledrink", "Pineapple carbonated drink","Pineapple flavored carbonated drink.", "400 gram", "1$","#F58F56", "Text"));
+
         setDishRecycler(dishList);
     }
 
