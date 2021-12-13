@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import com.hfad.myapplication.MainActivity;
 import com.hfad.myapplication.R;
 import com.hfad.myapplication.model.Category;
 
@@ -34,7 +35,12 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     public void onBindViewHolder(@NonNull CategoryViewHolder categoryViewHolder, int i) {
 
     categoryViewHolder.categoryTitle.setText(categories.get(i).getTitle());
-
+    categoryViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            MainActivity.showCoursesByCategory(categories.get(i).getId());
+        }
+    });
     }
 
     @Override

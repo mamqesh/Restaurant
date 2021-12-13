@@ -11,6 +11,5 @@
     <string name="description_dish">Description:</string>
     <string name="the_weight_dish">Weight:</string>
     <string name="price_dish">Price:</string>
-    <string name="description_french_fries">French fries are potato sticks with a cross-section of about 1 cm, fried in a large amount of hot vegetable oil.</string>
     <string name="add_to_cart">ADD TO CART</string>
 </resources>
