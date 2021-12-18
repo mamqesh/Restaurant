@@ -1,9 +1,12 @@
 package com.hfad.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+
 import com.hfad.myapplication.adapter.CategoryAdapter;
 import com.hfad.myapplication.adapter.MenuAdapter;
 import com.hfad.myapplication.model.Category;
@@ -53,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
         fullDishesList.addAll(dishList);
         setDishRecycler(dishList);
     }
+
+    public void openShoopingCart(View view){
+
+        Intent intent = new Intent(this,OrderPage.class);
+        startActivity(intent);
+
+    }
+
 
     private void setDishRecycler(List<MenuDishes> dishList) {
 

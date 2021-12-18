@@ -70,6 +70,8 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
                 intent.putExtra("priceDish", menuDishes.get(i).getPrice());
                 intent.putExtra("textDish", menuDishes.get(i).getText());
 
+                intent.putExtra("dishID", menuDishes.get(i).getId());
+
                 context.startActivity(intent, options.toBundle());
             }
         });

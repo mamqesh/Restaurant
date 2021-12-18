@@ -143,6 +143,7 @@
         android:layout_marginTop="50dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/app_name"
+        android:onClick="addToCart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dishPageDiscription"
@@ -160,5 +161,87 @@
         app:layout_constraintEnd_toEndOf="@+id/addToCard"
         app:layout_constraintStart_toStartOf="@+id/addToCard"
         app:layout_constraintTop_toTopOf="@+id/addToCard" />
+
+    <ImageView
+        android:id="@+id/menuBg"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_menu_bg" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/menuBg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="@+id/menuBg"
+        app:layout_constraintTop_toTopOf="@+id/menuBg"
+        app:layout_constraintVertical_bias="0.419"
+        app:srcCompat="@drawable/backet"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/menuBg"
+        app:layout_constraintEnd_toEndOf="@+id/menuBg"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toStartOf="@+id/menuBg"
+        app:layout_constraintTop_toTopOf="@+id/menuBg"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="@drawable/human" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/menuBg"
+        app:layout_constraintEnd_toEndOf="@+id/menuBg"
+        app:layout_constraintStart_toStartOf="@+id/menuBg"
+        app:layout_constraintTop_toTopOf="@+id/menuBg"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/menuBg"
+        app:layout_constraintEnd_toEndOf="@+id/menuBg"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="@+id/menuBg"
+        app:layout_constraintTop_toTopOf="@+id/menuBg"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="@drawable/map_marker" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/menuBg"
+        app:layout_constraintEnd_toEndOf="@+id/menuBg"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/menuBg"
+        app:layout_constraintTop_toTopOf="@+id/menuBg"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="@drawable/settings" />
 
 </android.support.constraint.ConstraintLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background1"
-    tools:context=".MainActivity">
+    tools:context=".OrderPage">
 
     <TextView
         android:id="@+id/textView"
@@ -29,32 +29,6 @@
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/categoryRecycler"
-        android:layout_width="375dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/menuRecycler"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/menuBg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/categoryRecycler" />
-
-
     <ImageView
         android:id="@+id/menuBg"
         android:layout_width="wrap_content"
@@ -73,7 +47,6 @@
         android:layout_height="55dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/app_name"
-        android:onClick="openShoopingCart"
         app:layout_constraintBottom_toBottomOf="@+id/menuBg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -137,5 +110,14 @@
         app:layout_constraintTop_toTopOf="@+id/menuBg"
         app:layout_constraintVertical_bias="0.363"
         app:srcCompat="@drawable/settings" />
+
+    <ListView
+        android:id="@+id/orders_list"
+        android:layout_width="375dp"
+        android:layout_height="490dp"
+        app:layout_constraintBottom_toTopOf="@+id/menuBg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </android.support.constraint.ConstraintLayout>
